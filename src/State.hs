@@ -25,7 +25,7 @@ main = do
     glossState <- initState
     withWindow width height "Game-Demo" $ \win -> do
           _ <- runStateT (loop win glossState) initialPlayer
-          exitSuccess
+    exitSuccess
 
 loop :: Window -> RS.State -> StateT Player IO ()
 loop window glossState = do
