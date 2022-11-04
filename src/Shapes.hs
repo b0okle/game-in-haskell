@@ -17,7 +17,7 @@ main = do
     glossState <- initState
     withWindow windowWidth windowHeight "Game-Demo" $ \win -> do
           loop glossState win
-          exitSuccess
+    exitSuccess
     where loop glossState window =  do
             threadDelay 20000
             pollEvents
